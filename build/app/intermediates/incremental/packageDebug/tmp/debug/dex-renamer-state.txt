@@ -1,0 +1,4 @@
+#Sat Jul 06 18:22:46 BRT 2019
+base.0=/home/denis/AndroidStudioProjects/conversor_moedas/build/app/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
