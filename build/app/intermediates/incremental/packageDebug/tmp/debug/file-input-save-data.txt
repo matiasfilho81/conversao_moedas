@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Jul 15 10:41:53 BRT 2019
+#Mon Jul 15 12:24:53 BRT 2019
 4.path=lib/x86_64/libflutter.so
 8.set=NATIVE_RESOURCE
 6.path=lib/arm64-v8a/libflutter.so

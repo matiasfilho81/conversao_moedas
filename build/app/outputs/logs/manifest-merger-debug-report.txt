@@ -5,6 +5,7 @@ INJECTED from /Users/matiasfilho/conversao_moedas/android/app/src/main/AndroidMa
 INJECTED from /Users/matiasfilho/conversao_moedas/android/app/src/main/AndroidManifest.xml:1:1-33:12
 INJECTED from /Users/matiasfilho/conversao_moedas/android/app/src/main/AndroidManifest.xml:1:1-33:12
 MERGED from /Users/matiasfilho/conversao_moedas/android/app/src/main/AndroidManifest.xml:1:1-33:12
+MERGED from [:url_launcher] /Users/matiasfilho/conversao_moedas/build/url_launcher/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:2:1-14:12
 INJECTED from /Users/matiasfilho/conversao_moedas/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 INJECTED from /Users/matiasfilho/conversao_moedas/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 INJECTED from /Users/matiasfilho/conversao_moedas/android/app/src/debug/AndroidManifest.xml:1:1-7:12
@@ -24,6 +25,8 @@ INJECTED from /Users/matiasfilho/conversao_moedas/android/app/src/debug/AndroidM
 		ADDED from /Users/matiasfilho/conversao_moedas/android/app/src/main/AndroidManifest.xml:1:11-69
 application
 ADDED from /Users/matiasfilho/conversao_moedas/android/app/src/main/AndroidManifest.xml:9:5-32:19
+MERGED from [:url_launcher] /Users/matiasfilho/conversao_moedas/build/url_launcher/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-12:19
+MERGED from [:url_launcher] /Users/matiasfilho/conversao_moedas/build/url_launcher/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:7:5-12:19
 	android:label
 		ADDED from /Users/matiasfilho/conversao_moedas/android/app/src/main/AndroidManifest.xml:11:9-41
 	android:icon
@@ -64,6 +67,8 @@ uses-sdk
 INJECTED from /Users/matiasfilho/conversao_moedas/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/matiasfilho/conversao_moedas/android/app/src/main/AndroidManifest.xml
 INJECTED from /Users/matiasfilho/conversao_moedas/android/app/src/main/AndroidManifest.xml
+MERGED from [:url_launcher] /Users/matiasfilho/conversao_moedas/build/url_launcher/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher] /Users/matiasfilho/conversao_moedas/build/url_launcher/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:5:5-44
 INJECTED from /Users/matiasfilho/conversao_moedas/android/app/src/debug/AndroidManifest.xml
 INJECTED from /Users/matiasfilho/conversao_moedas/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
@@ -76,3 +81,11 @@ uses-permission#android.permission.INTERNET
 ADDED from /Users/matiasfilho/conversao_moedas/android/app/src/debug/AndroidManifest.xml:6:5-66
 	android:name
 		ADDED from /Users/matiasfilho/conversao_moedas/android/app/src/debug/AndroidManifest.xml:6:22-64
+activity#io.flutter.plugins.urllauncher.UrlLauncherPlugin$WebViewActivity
+ADDED from [:url_launcher] /Users/matiasfilho/conversao_moedas/build/url_launcher/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:8:9-11:74
+	android:exported
+		ADDED from [:url_launcher] /Users/matiasfilho/conversao_moedas/build/url_launcher/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:10:13-37
+	android:theme
+		ADDED from [:url_launcher] /Users/matiasfilho/conversao_moedas/build/url_launcher/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:11:13-71
+	android:name
+		ADDED from [:url_launcher] /Users/matiasfilho/conversao_moedas/build/url_launcher/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml:9:13-92

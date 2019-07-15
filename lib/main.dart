@@ -4,6 +4,8 @@ import 'package:http/http.dart' as http;
 import 'dart:async';
 import 'dart:convert';
 
+import 'package:url_launcher/url_launcher.dart';
+
 const request = "https://api.hgbrasil.com/finance?format=json&key=49e7344b";
 
 void main() async {
@@ -12,10 +14,36 @@ void main() async {
   runApp(MaterialApp(
     home: Home(),
     theme: ThemeData(
-        hintColor: Colors.amber,
+        hintColor: Colors.blueAccent,
         primaryColor: Colors.white
     ),
   ));
+}
+_launchURLGLO() async {
+  const url = 'https://goo.gl/maps/Xc9qmkuajt9dUqtG9';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
+_launchURLWAZE() async {
+  const url = 'https://www.waze.com/ul?ll=-22.81962133%2C-47.06834793&navigate=yes&zoom=14';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
+}
+
+_launchURLUBER() async {
+  const url = 'https://www.waze.com/ul?ll=-22.81962133%2C-47.06834793&navigate=yes&zoom=14';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
+  }
 }
 
 Future<Map> getData() async {
@@ -86,8 +114,8 @@ class _HomeState extends State<Home> {
     return Scaffold(
         backgroundColor: Colors.black,
         appBar: AppBar(
-          title: Text("\$ Conversor \$"),
-          backgroundColor: Colors.amber,
+          title: Text("Developement"),
+          backgroundColor: Colors.blueAccent,
           centerTitle: true,
         ),
         body: FutureBuilder<Map>(
@@ -99,7 +127,7 @@ class _HomeState extends State<Home> {
                   return Center(
                       child: Text(
                     "Loading...",
-                    style: TextStyle(color: Colors.amber, fontSize: 20.0),
+                    style: TextStyle(color: Colors.blueAccent, fontSize: 20.0),
                     textAlign: TextAlign.center,
                   ));
                 default:
@@ -107,7 +135,7 @@ class _HomeState extends State<Home> {
                     return Center(
                         child: Text(
                       "Error loading data :( ",
-                      style: TextStyle(color: Colors.amber, fontSize: 20.0),
+                      style: TextStyle(color: Colors.blueAccent, fontSize: 20.0),
                       textAlign: TextAlign.center,
                     ));
                   } else {
@@ -120,12 +148,33 @@ class _HomeState extends State<Home> {
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: <Widget>[
                           Icon(Icons.monetization_on,
-                              size: 115.0, color: Colors.amber),
+                              size: 115.0, color: Colors.blueAccent),
                           buildTextField("Reais", "R\$", realController, _realChanged),
                           Divider(),
                           buildTextField("Dólares", "US\$", dolarController, _dolarChanged),
                           Divider(),
                           buildTextField("Euros", "€\$", euroController, _euroChanged),
+                          Divider(),
+                          //
+                          RaisedButton(
+                            onPressed: _launchURLGLO,
+                            child: Text('Google'),
+                            //  onPressed: null,
+                            shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(30.0))
+                          ),
+                          Divider(),
+                          RaisedButton(
+                            onPressed: _launchURLWAZE,
+                            child: Text('Waze'),
+                            //  onPressed: null,
+                            shape: new RoundedRectangleBorder(borderRadius: new BorderRadius.circular(30.0))
+                          ),
+                          Divider(),
+                          floatingActionButton: FloatingActionButton(
+                            child: Icon(Icons.add),
+                            onPressed: () {},
+                          )
+                          //
                         ],
                       ),
                     );
@@ -140,12 +189,12 @@ Widget buildTextField(String label, String prefix, TextEditingController c, Func
     controller: c,
     decoration: InputDecoration(
         labelText: label,
-        labelStyle: TextStyle(color: Colors.amber),
+        labelStyle: TextStyle(color: Colors.blueAccent),
         border: OutlineInputBorder(),
         prefixText: prefix,
     ),
     style: TextStyle(
-        color: Colors.amber,
+        color: Colors.blueAccent,
         fontSize: 20.0
     ),
     onChanged: f,

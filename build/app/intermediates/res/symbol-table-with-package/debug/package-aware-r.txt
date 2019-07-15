@@ -1,0 +1,4 @@
+br.com.claudiano.conversor_moedas
+drawable launch_background
+mipmap ic_launcher
+style LaunchTheme
