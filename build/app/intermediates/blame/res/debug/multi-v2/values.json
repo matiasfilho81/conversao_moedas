@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/denis/AndroidStudioProjects/conversor_moedas/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/matiasfilho/conversao_moedas/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
-                    "source": "/home/denis/AndroidStudioProjects/conversor_moedas/android/app/src/main/res/values/styles.xml",
+                    "source": "/Users/matiasfilho/conversao_moedas/android/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
